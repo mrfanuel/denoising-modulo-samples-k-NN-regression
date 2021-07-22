@@ -1,3 +1,5 @@
+% by courtesy of Prof. Mihai Cucuringu
+
 function [ gest_trs ] = TRS_denoise(z,L,reg_param,n)
 
 zbar = [real(z); imag(z)]; % 2n x 1 vector

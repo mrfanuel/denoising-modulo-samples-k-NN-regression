@@ -1,3 +1,5 @@
+% by courtesy of Prof. Mihai Cucuringu
+
 %% Input: 
 %% complex vector z on product manifold of unit magnitude complex numbers
 %% L: Laplacian of input graph

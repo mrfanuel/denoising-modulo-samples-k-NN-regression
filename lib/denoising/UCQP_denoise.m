@@ -1,3 +1,4 @@
+% by courtesy of Prof. Mihai Cucuringu
 %% UCQP: returns the solution of the unconstrained "least squares with smooth regularization" problem
 %%
 %%

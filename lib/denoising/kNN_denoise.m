@@ -12,7 +12,7 @@ g_est = zeros(size(z));
 
 for i=1:length(x)
 
-    nb_i = index_nn(i,:); % to be checked
+    nb_i = index_nn(i,:); 
     h_i = (1/k)*sum(z(nb_i)); %h_i = h_i/abs(h_i);
     g_est(i) = h_i;
     %f_mod1_denoised(i) = angle(h_i)/(2*pi);

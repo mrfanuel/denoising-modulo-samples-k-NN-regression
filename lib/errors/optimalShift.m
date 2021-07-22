@@ -1,3 +1,4 @@
+% by courtesy of Prof. Mihai Cucuringu
 function [ x , glob_shift ] = optimalShift(x, f_orig)
 
 x = reshape(x, 1, length(x));

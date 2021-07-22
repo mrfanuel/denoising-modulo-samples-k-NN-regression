@@ -1,3 +1,5 @@
+% by courtesy of Prof. Mihai Cucuringu
+
 function [x,lam1] = TRSgep(A,a,B,Del,estimategap)
 % Solves the trust-region subproblem by a generalized eigenproblem without iterations
 % Compute 2 eigenvalues of 2n*2n matrix to estimate gap
