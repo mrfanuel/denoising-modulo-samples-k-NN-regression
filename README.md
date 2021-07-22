@@ -14,3 +14,10 @@ https://www.jmlr.org/papers/volume21/18-143/18-143.pdf
 - Denoise_1D_main_ex2.m reproduces Figure 4 and Figure 5.
 - Denoise_2D_Vesuvius.m reproduces Figure 6.
 
+### Vesuvius data
+
+The elevation map of MountVesuvius (N40E014.hgt.zip) was downloaded thanks to the readhgt.m script written by Françcois Beauducel; see https://dds.cr.usgs.gov/srtm/version2_1.
+This data was stored in Vesuvius_zoom.mat file after a preprocessing.
+
+
+
