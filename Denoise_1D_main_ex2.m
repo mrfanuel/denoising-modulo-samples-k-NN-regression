@@ -7,7 +7,7 @@ clc
 
 addpath(genpath('lib'))  
 
-method = 'kNN';%'TRS';%'SDP';%'UCQP';
+method = 'kNN';%'TRS';%'UCQP';
 disp(method)
 disp('Started')
 
@@ -21,8 +21,6 @@ range_n = 100:50:1000; % range of n values
 if strcmp(method,'kNN')
     C_kNN = 0.07;%
     k = ceil(C_kNN*(range_n.^(2/3)).*(log(range_n).^(1/3))); %% number of neigbours
-elseif strcmp(method,'SDP')
-    lambda = 0.1*ones(size(range_n)); 
 elseif strcmp(method,'UCQP')
     C_UCQP =  c;
     lambda = C_UCQP*(range_n.^(10/3)).^(1/4);
@@ -90,12 +88,6 @@ for index = 1:length(range_n)
             gest_kNN = kNN_denoise(z,x,nb_nb);
             gest_kNN_proj = project_manifold(gest_kNN);
             f_mod1_denoised = extract_modulo(gest_kNN_proj);
-            
-        elseif strcmp(method,'SDP')
-            reg_param = lambda(index);
-            gest_sdp = SDP_denoise(z,L,reg_param,n);
-            gest_sdp_proj = project_manifold(gest_sdp);
-            f_mod1_denoised = extract_modulo(gest_sdp_proj);
         elseif strcmp(method,'UCQP')
             reg_param = lambda(index);
             gest_ucqp = UCQP_denoise(z,L,reg_param,n);
