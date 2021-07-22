@@ -85,42 +85,36 @@ figure;
 surf(X,Y,unwrapped_clean)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-%title('clean unwrapped') 
 saveas(gcf,'figures/2D/Vesuvius_unwrapped_clean.eps')
 
 figure;
 surf(X,Y,f_clean_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-%title('clean') 
 saveas(gcf,'figures/2D/Vesuvius_clean.eps')
 
 figure;
 surf(X,Y,y_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-%title('noisy mod 1') 
 saveas(gcf,'figures/2D/Vesuvius_noisy_mod1.eps')
 
 figure;
 surf(X,Y,f_unwrapped_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-%title('denoised unwrapped') 
 saveas(gcf,'figures/2D/Vesuvius_denoised_unwrapped.eps')
 
 figure;
 surf(X,Y,y_unwrapped_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-%title('noisy unwrapped') 
 saveas(gcf,'figures/2D/Vesuvius_noisy_unwrapped.eps')
 
 figure;
 surf(X,Y,y_clean)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-%title('clean mod 1') 
 saveas(gcf,'figures/2D/Vesuvius_mod1clean_unwrapped.eps')
 
 %% Contour plots
@@ -129,24 +123,19 @@ figure;
 contour(X,Y,f_clean_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-%title('clean mod 1') 
 saveas(gcf,'figures/2D/Vesuvius_clean_contour.eps')
 
 figure;
 contour(X,Y,f_unwrapped_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-%title('denoised unwrapped') 
 saveas(gcf,'figures/2D/Vesuvius_denoised_unwrapped_contour.eps')
 
 figure;
 contour(X,Y,y_unwrapped_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-%title('noisy unwrapped') 
 saveas(gcf,'figures/2D/Vesuvius_noisy_unwrapped_contour.eps')
-
-
 
 
 figure;
@@ -159,7 +148,6 @@ figure;
 contour(X,Y,y_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-%title('noisy mod 1') 
 saveas(gcf,'figures/2D/Vesuvius_noisy_mod1_contour.eps')
 
 figure;
@@ -168,4 +156,3 @@ xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
 saveas(gcf,'figures/2D/Vesuvius_clean_mod1_contour.eps')
 
-%exit

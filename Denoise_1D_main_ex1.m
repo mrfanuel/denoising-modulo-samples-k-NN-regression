@@ -6,9 +6,8 @@ clear all
 clc
 
 addpath(genpath('lib'))  
-addpath(genpath('matlab2tikz-master'))  
 
-method = 'TRS';%'kNN';%'SDP';%'UCQP';%'TRS';%'kNN';
+method = 'kNN';%'TRS';%'SDP';%'UCQP';
 disp(method)
 disp('Started')
 
@@ -23,7 +22,7 @@ if strcmp(method,'kNN')
     C_kNN = 0.07;%
     k = ceil(C_kNN*(range_n.^(2/3)).*(log(range_n).^(1/3))); %% number of neigbours
 elseif strcmp(method,'SDP')
-    lambda = 0.1*ones(size(range_n)); % 1/16
+    lambda = 0.1*ones(size(range_n)); 
 elseif strcmp(method,'UCQP')
     C_UCQP =  c;
     lambda = C_UCQP*(range_n.^(10/3)).^(1/4);
@@ -49,7 +48,7 @@ err_unwrapped_noisy_temp = ones(n_MC,1);
 
 
 %% Ground truth
-ff = @(x) 4 + 4.*x .* cos(2*pi*x) .^2 - 2.*sin(2*pi*x).^2 + 0.7;   %ff = @(x) sin(2*pi*x);
+ff = @(x) 4 + 4.*x .* cos(2*pi*x) .^2 - 2.*sin(2*pi*x).^2 + 0.7; 
 
 a = 0;b = 1; 
 
@@ -191,18 +190,12 @@ errorbar(range_n, err_wrap_around_noisy, std_err_wrap_around_noisy,'k' )
 
 xlabel('$n$','Interpreter','latex', 'FontSize', 25)
 ylabel('Wrap around MSE','Interpreter','latex', 'FontSize', 25)
-%legend('denoised', 'noisy')
 
-%title(strcat(method,' denoised mod 1')) 
 place = strcat(strcat('/ex1_paper_err_mod1_',method),'.png');
 folder = strcat('figures/',method);
 place = strcat(folder,place);
 saveas(gcf,place)
-%% export to tikz
-place = strcat(strcat('/ex1_paper_err_mod1_',method),'.tikz');
-folder = strcat('figures/',method);
-place = strcat(folder,place);
-matlab2tikz(place);
+
 
 %%%%%%%%%%%%%%% MSE %%%%%%%%%%%%%%% 
 
@@ -215,7 +208,6 @@ xlim([95,1005])
 hold on;
 plot(range_n, err_unwrapped_noisy, '-r<', 'MarkerSize', 4, 'markerfacecolor','r');hold on;
 errorbar(range_n, err_unwrapped_noisy, std_err_unwrapped_noisy,'r' )
-%legend('denoised', 'noisy')
 
 xlabel('$n$','Interpreter','latex', 'FontSize', 25)
 ylabel('MSE','Interpreter','latex', 'FontSize', 25)
@@ -224,13 +216,5 @@ folder = strcat('figures/',method);
 place = strcat(folder,place);
 saveas(gcf,place)
 
-
-place = strcat(strcat('/ex1_paper_err_unwrapped_',method),'.tikz');
-folder = strcat('figures/',method);
-place = strcat(folder,place);
-matlab2tikz(place);
-
-
 disp('ended')
 
-%exit;
