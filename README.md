@@ -5,7 +5,7 @@ This repository contains scripts associated to the paper:
 https://arxiv.org/pdf/2009.04850.pdf
 
 A few implementations of denoising/unwrapping methods were shared with us by M. Cucuringu; see the following paper
->M. Cucuringu and H. Tyagi. Provably robust estimation of modulo 1 samples of a smooth func-tion with applications to phase unwrapping. Journal of Machine Learning Research, 21(32):1–77, 2020.
+>M. Cucuringu and H. Tyagi. Provably robust estimation of modulo 1 samples of a smooth function with applications to phase unwrapping. Journal of Machine Learning Research, 21(32):1–77, 2020.
 https://www.jmlr.org/papers/volume21/18-143/18-143.pdf
 
 ## files
