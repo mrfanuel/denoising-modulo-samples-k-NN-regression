@@ -16,7 +16,7 @@ https://www.jmlr.org/papers/volume21/18-143/18-143.pdf
 
 ### Vesuvius data
 
-The elevation map of MountVesuvius (N40E014.hgt.zip) was downloaded thanks to the readhgt.m script written by Françcois Beauducel; see https://dds.cr.usgs.gov/srtm/version2_1.
+The elevation map of MountVesuvius (N40E014.hgt.zip) was downloaded thanks to the readhgt.m script written by François Beauducel; see https://dds.cr.usgs.gov/srtm/version2_1.
 This data was stored in Vesuvius_zoom.mat file after a preprocessing.
 
 
