@@ -7,6 +7,7 @@ clc
 
 addpath(genpath('lib'))  
 
+% choose the method below
 method = 'kNN';%'TRS';%'UCQP';
 disp(method)
 disp('Started')
@@ -160,7 +161,7 @@ subplot(6,1,6);
 plot(x,y_noisy_unwrapped); % Unwrapped Clean mod 1 samples
 title('Unwrapped noisy','Interpreter','latex') 
 
-place = strcat(strcat('/ex1_Comparison_Denoising_UnWrapping_1D_',method),'.png');
+place = strcat(strcat('/ex2_Comparison_Denoising_UnWrapping_1D_',method),'.png');
 folder = strcat('figures/',method);
 place = strcat(folder,place);
 saveas(gcf,place)
@@ -183,7 +184,7 @@ errorbar(range_n, err_wrap_around_noisy, std_err_wrap_around_noisy,'k' )
 xlabel('$n$','Interpreter','latex', 'FontSize', 25)
 ylabel('Wrap around MSE','Interpreter','latex', 'FontSize', 25)
 
-place = strcat(strcat('/ex1_paper_err_mod1_',method),'.png');
+place = strcat(strcat('/ex2_paper_err_mod1_',method),'.png');
 folder = strcat('figures/',method);
 place = strcat(folder,place);
 saveas(gcf,place)
@@ -203,7 +204,7 @@ errorbar(range_n, err_unwrapped_noisy, std_err_unwrapped_noisy,'r' )
 
 xlabel('$n$','Interpreter','latex', 'FontSize', 25)
 ylabel('MSE','Interpreter','latex', 'FontSize', 25)
-place = strcat(strcat('/ex1_paper_err_unwrapped_',method),'.png');
+place = strcat(strcat('/ex2_paper_err_unwrapped_',method),'.png');
 folder = strcat('figures/',method);
 place = strcat(folder,place);
 saveas(gcf,place)

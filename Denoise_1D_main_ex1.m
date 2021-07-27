@@ -7,6 +7,7 @@ clc
 
 addpath(genpath('lib'))  
 
+% choose the method below
 method = 'kNN';%'TRS';%'UCQP';
 disp(method)
 disp('Started')
@@ -18,7 +19,7 @@ n_MC = 50; % number of Monte-Carlo runs
 range_n = 100:50:1000; % range of n values
 c = 0.04;%0.07;
 if strcmp(method,'kNN')
-    C_kNN = 0.09%0.07;%
+    C_kNN = 0.09; %0.07;%
     k = ceil(C_kNN*(range_n.^(2/3)).*(log(range_n).^(1/3))); %% number of neigbours
 elseif strcmp(method,'UCQP')
     C_UCQP =  c;
@@ -160,7 +161,7 @@ subplot(6,1,6);
 plot(x,y_noisy_unwrapped); % Unwrapped Clean mod 1 samples
 title('Unwrapped noisy','Interpreter','latex') 
 
-place = strcat(strcat('/ex2_Comparison_Denoising_UnWrapping_1D_',method),'.png');
+place = strcat(strcat('/ex1_Comparison_Denoising_UnWrapping_1D_',method),'.png');
 folder = strcat('figures/',method);
 place = strcat(folder,place);
 saveas(gcf,place)
@@ -183,7 +184,7 @@ errorbar(range_n, err_wrap_around_noisy, std_err_wrap_around_noisy,'k' )
 xlabel('$n$','Interpreter','latex', 'FontSize', 25)
 ylabel('Wrap around MSE','Interpreter','latex', 'FontSize', 25)
 
-place = strcat(strcat('/ex2_paper_err_mod1_',method),'.png');
+place = strcat(strcat('/ex1_paper_err_mod1_',method),'.png');
 folder = strcat('figures/',method);
 place = strcat(folder,place);
 saveas(gcf,place)
@@ -202,7 +203,7 @@ errorbar(range_n, err_unwrapped_noisy, std_err_unwrapped_noisy,'r' )
 
 xlabel('$n$','Interpreter','latex', 'FontSize', 25)
 ylabel('MSE','Interpreter','latex', 'FontSize', 25)
-place = strcat(strcat('/ex2_paper_err_unwrapped_',method),'.png');
+place = strcat(strcat('/ex1_paper_err_unwrapped_',method),'.png');
 folder = strcat('figures/',method);
 place = strcat(folder,place);
 saveas(gcf,place)

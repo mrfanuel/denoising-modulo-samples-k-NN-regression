@@ -85,37 +85,37 @@ figure;
 surf(X,Y,unwrapped_clean)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_unwrapped_clean.eps')
+saveas(gcf,'figures/2D/Vesuvius_unwrapped_clean.png')
 
 figure;
 surf(X,Y,f_clean_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_clean.eps')
+saveas(gcf,'figures/2D/Vesuvius_clean.png')
 
 figure;
 surf(X,Y,y_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_noisy_mod1.eps')
+saveas(gcf,'figures/2D/Vesuvius_noisy_mod1.png')
 
 figure;
 surf(X,Y,f_unwrapped_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_denoised_unwrapped.eps')
+saveas(gcf,'figures/2D/Vesuvius_denoised_unwrapped.png')
 
 figure;
 surf(X,Y,y_unwrapped_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_noisy_unwrapped.eps')
+saveas(gcf,'figures/2D/Vesuvius_noisy_unwrapped.png')
 
 figure;
 surf(X,Y,y_clean)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_mod1clean_unwrapped.eps')
+saveas(gcf,'figures/2D/Vesuvius_mod1clean_unwrapped.png')
 
 %% Contour plots
 
@@ -123,36 +123,36 @@ figure;
 contour(X,Y,f_clean_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_clean_contour.eps')
+saveas(gcf,'figures/2D/Vesuvius_clean_contour.png')
 
 figure;
 contour(X,Y,f_unwrapped_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_denoised_unwrapped_contour.eps')
+saveas(gcf,'figures/2D/Vesuvius_denoised_unwrapped_contour.png')
 
 figure;
 contour(X,Y,y_unwrapped_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_noisy_unwrapped_contour.eps')
+saveas(gcf,'figures/2D/Vesuvius_noisy_unwrapped_contour.png')
 
 
 figure;
 contour(X,Y,f_mod1_denoised_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_denoised_mod1_contour.eps')
+saveas(gcf,'figures/2D/Vesuvius_denoised_mod1_contour.png')
 
 figure;
 contour(X,Y,y_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_noisy_mod1_contour.eps')
+saveas(gcf,'figures/2D/Vesuvius_noisy_mod1_contour.png')
 
 figure;
 contour(X,Y,f_mod1_clean_grid)
 xlabel('','Interpreter','latex', 'FontSize', 25)
 ylabel('','Interpreter','latex', 'FontSize', 25)
-saveas(gcf,'figures/2D/Vesuvius_clean_mod1_contour.eps')
+saveas(gcf,'figures/2D/Vesuvius_clean_mod1_contour.png')
 
