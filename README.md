@@ -19,5 +19,9 @@ https://www.jmlr.org/papers/volume21/18-143/18-143.pdf
 The elevation map of MountVesuvius (N40E014.hgt.zip) was downloaded thanks to the readhgt.m script written by François Beauducel; see https://dds.cr.usgs.gov/srtm/version2_1.
 This data was stored in Vesuvius_zoom.mat file after a preprocessing.
 
+## Dependencies
+
+These scripts require Matlab Statistics and Machine Learning Toolbox (version Matlab R2019b).
+
 
 
