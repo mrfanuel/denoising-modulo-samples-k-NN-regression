@@ -1,7 +1,11 @@
+%% Author: M. Fanuel
 %% Input: 
 %% complex vector z on product manifold of unit magnitude complex numbers
 %% real vector x of the node grid
 %% k: number of neighbours
+%% Output:
+%% kNN estimate (before rounding on the product of circle manifold) 
+
 
 function g_est = kNN_denoise(z,x,k)
 
