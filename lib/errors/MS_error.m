@@ -1,6 +1,8 @@
+%% Input: vectors x and y
+%% Output: mean squared error between x and y
 function res = MS_error(x,y)
 
-	[ x_shifted , glob_shift ] = optimalShift(x, y);
-    res = sqrt( sum( (x_shifted'-y) .^ 2) / length(y) );
+	[x_shifted , glob_shift ] = optimalShift(x, y);
+	res = sqrt( sum( (x_shifted'-y) .^ 2) / length(y) );
     
 end
