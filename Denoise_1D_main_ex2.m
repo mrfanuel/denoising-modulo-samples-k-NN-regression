@@ -182,7 +182,7 @@ plot(range_n, err_wrap_around_noisy, '-k<', 'MarkerSize', 4, 'markerfacecolor','
 errorbar(range_n, err_wrap_around_noisy, std_err_wrap_around_noisy,'k' )
 
 xlabel('$n$','Interpreter','latex', 'FontSize', 25)
-ylabel('Wrap around MSE','Interpreter','latex', 'FontSize', 25)
+ylabel('Wrap around RMSE','Interpreter','latex', 'FontSize', 25)
 
 place = strcat(strcat('/ex2_paper_err_mod1_',method),'.png');
 folder = strcat('figures/',method);
@@ -203,7 +203,7 @@ plot(range_n, err_unwrapped_noisy, '-r<', 'MarkerSize', 4, 'markerfacecolor','r'
 errorbar(range_n, err_unwrapped_noisy, std_err_unwrapped_noisy,'r' )
 
 xlabel('$n$','Interpreter','latex', 'FontSize', 25)
-ylabel('MSE','Interpreter','latex', 'FontSize', 25)
+ylabel('RMSE','Interpreter','latex', 'FontSize', 25)
 place = strcat(strcat('/ex2_paper_err_unwrapped_',method),'.png');
 folder = strcat('figures/',method);
 place = strcat(folder,place);
