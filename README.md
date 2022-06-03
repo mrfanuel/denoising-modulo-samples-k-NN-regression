@@ -1,7 +1,7 @@
 # denoising-modulo-samples-k-NN-regression
 
 This repository contains scripts associated to the paper:
->M. Fanuel and H. Tyagi, Denoising modulo samples: k-NN regression and tightness of SDP relaxation, accepted in Information and Inference: A Journal of the IMA
+>M. Fanuel and H. Tyagi, [Denoising modulo samples: k-NN regression and tightness of SDP relaxation](https://doi.org/10.1093/imaiai/iaab022), published in Information and Inference: A Journal of the IMA
 https://arxiv.org/pdf/2009.04850.pdf
 
 A few implementations of denoising/unwrapping methods were shared with us by M. Cucuringu; see the following paper
